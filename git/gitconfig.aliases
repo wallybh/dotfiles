@@ -1,0 +1,36 @@
+[alias]
+    aliases = "!git config --get-regexp alias | cut -c 7-"
+    a = add .
+    bi =  bisect
+    cm = commit --verbose
+    co = checkout
+    db = branch -D
+    last = log -1 HEAD
+    nb = checkout -b
+    pr = pull --rebase
+    ra = rebase --abort
+    rc = rebase --continue
+    pf = push --force-with-lease
+    renb = branch -m
+    rh = reset --hard
+    s = status -s
+    stashes = stash list
+    mend = commit --amend
+    # Deletes all branches merged specified branch (or master if no branch is specified)
+    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
+    cp = cherry-pick
+    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+    open = "!f(){ URL=$(git config remote.origin.url); open ${URL%.git}; }; f"
+    undo = reset HEAD~1 --mixed
+    unstage = reset HEAD --
+    conflicts = diff --name-only --diff-filter=U
+    cm-version-i18n = commit -m 'Incrementa o número da versão e atualiza arquivos translate'
+    cm-version = commit -m 'Incrementa o número da versão'
+    cm-snapshot = commit -m 'Atualiza snapshot da última migration'
+    raw = log --format=%B -n 1
+    wt = worktree
+    cm-snapshotTimestamp = commit -m 'Atualiza timestamp e snapshot da última migration'
+    glog = log --graph --pretty=format:'%Cred%h%Creset %Cblue%an%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    f = flow
+    # View abbreviated SHA, description, and history graph of the latest 20 commits.
+    l = log --pretty=oneline -n 20 --graph --abbrev-commit

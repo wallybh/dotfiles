@@ -1,0 +1,10 @@
+[include]
+	path = ~/.gitconfig.aliases
+[core]
+	editor = vim
+[user]
+	email = wallison@outlook.com
+	name = Wallison Santos
+	signingkey = 9C2A1DFCF4606416
+[init]
+	defaultBranch = main
