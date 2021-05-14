@@ -9,5 +9,9 @@
         path: git/gitconfig.aliases
     ~/.zsh:
     ~/.zshrc:
+    ~/.oh-my-zsh/custom/themes/powerlevel10k:
+        path: zsh/powerlevel10k/
+    ~/.p10k.zsh:
+        path: zsh/p10k.zsh
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
