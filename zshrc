@@ -113,3 +113,4 @@ alias ta="task active"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export GPG_TTY=$(tty)
+. ~/dotfiles/libs/z/z.sh

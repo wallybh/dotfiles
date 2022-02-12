@@ -6,3 +6,6 @@
 	path = zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "libs/z"]
+	path = libs/z
+	url = git@github.com:rupa/z.git
