@@ -13,5 +13,7 @@
         path: zsh/powerlevel10k/
     ~/.p10k.zsh:
         path: zsh/p10k.zsh
+    ~/.vimrc:
+        vim/vimrc
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
