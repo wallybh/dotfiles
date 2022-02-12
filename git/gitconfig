@@ -2,6 +2,7 @@
 	path = ~/.gitconfig.aliases
 [core]
 	editor = vim
+	pager = less -FRX
 [user]
 	email = wallison@outlook.com
 	name = Wallison Santos
