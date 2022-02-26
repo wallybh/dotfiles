@@ -13,6 +13,8 @@
         path: zsh/powerlevel10k/
     ~/.p10k.zsh:
         path: zsh/p10k.zsh
+    ~/.vim:
+        vim/vim
     ~/.vimrc:
         vim/vimrc
 - shell:

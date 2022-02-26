@@ -9,3 +9,6 @@
 [submodule "libs/z"]
 	path = libs/z
 	url = git@github.com:rupa/z.git
+[submodule "vim/vim/pack/vendor/start/vim-sleuth"]
+	path = vim/vim/pack/vendor/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
