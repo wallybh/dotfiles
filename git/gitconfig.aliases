@@ -36,3 +36,4 @@
     l = log --pretty=oneline -n 20 --graph --abbrev-commit
     gl = log --graph --pretty=format:'%Cred%h%Creset %Cblue%an%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     stg = diff --staged
+    upgrade-submodules = submodule update --init --remote
