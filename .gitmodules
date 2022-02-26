@@ -12,3 +12,6 @@
 [submodule "vim/vim/pack/vendor/start/vim-sleuth"]
 	path = vim/vim/pack/vendor/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
+[submodule "vim/vim/pack/vendor/start/vim-terraform"]
+	path = vim/vim/pack/vendor/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
