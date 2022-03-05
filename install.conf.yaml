@@ -11,6 +11,8 @@
     ~/.zshrc:
     ~/.oh-my-zsh/custom/themes/powerlevel10k:
         path: zsh/powerlevel10k/
+    ~/.oh-my-zsh/custom/plugins/terraform:
+        path: zsh/zsh-terraform/
     ~/.p10k.zsh:
         path: zsh/p10k.zsh
     ~/.vim:

@@ -15,3 +15,6 @@
 [submodule "vim/vim/pack/vendor/start/vim-terraform"]
 	path = vim/vim/pack/vendor/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "zsh/zsh-terraform"]
+	path = zsh/zsh-terraform
+	url = https://github.com/macunha1/zsh-terraform.git
