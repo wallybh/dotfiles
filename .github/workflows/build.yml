@@ -1,0 +1,21 @@
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install zsh
+        run: sudo apt-get update; sudo apt-get install zsh
+      - name: Install oh-my-zsh
+        run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Test zsh
+        run: |
+          echo $ZSH_NAME $ZSH_VERSION
+          rm ~/.zshrc
+        shell: zsh {0}
+      - name: Run install
+        run: |
+          git submodule update --init --recursive
+          ./install -v
